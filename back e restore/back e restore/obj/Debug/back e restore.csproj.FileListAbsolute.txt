@@ -1,0 +1,11 @@
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\bin\Debug\back e restore.exe.config
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\bin\Debug\back e restore.exe
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\bin\Debug\back e restore.pdb
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back e restore.csproj.AssemblyReference.cache
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back e restore.csproj.SuggestedBindingRedirects.cache
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back_e_restore.Form1.resources
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back_e_restore.Properties.Resources.resources
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back e restore.csproj.GenerateResource.cache
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back e restore.csproj.CoreCompileInputs.cache
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back e restore.exe
+C:\Users\victor.hsantos41\source\repos\back e restore\back e restore\obj\Debug\back e restore.pdb
