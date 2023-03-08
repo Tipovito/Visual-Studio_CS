@@ -1,0 +1,18 @@
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\bin\Debug\Projetinho Splash.exe.config
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\bin\Debug\Projetinho Splash.exe
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\bin\Debug\Projetinho Splash.pdb
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.csproj.SuggestedBindingRedirects.cache
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.Form1.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.Properties.Resources.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.csproj.GenerateResource.cache
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.csproj.CoreCompileInputs.cache
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.exe
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.pdb
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmLogin.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\bin\Debug\CircularProgressBar.dll
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\bin\Debug\WinFormAnimation.dll
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\bin\Debug\CircularProgressBar.xml
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.csproj.AssemblyReference.cache
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.csproj.CopyComplete
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmCadPessoa.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmMenu.resources
