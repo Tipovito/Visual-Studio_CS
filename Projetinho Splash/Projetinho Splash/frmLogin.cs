@@ -48,9 +48,19 @@ namespace Projetinho_Splash
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmMenu frmLogin = new frmMenu();
-            this.Hide();
-            frmLogin.ShowDialog();
+            if ((textBox1.Text == "victor") && (textBox2.Text == "123") && (comboBox1.Text == "Pintor"))
+            {
+                this.Visible = false;
+                frmMenu frmLogin = new frmMenu();
+                frmLogin.ShowDialog();
+            }
+            else
+                MessageBox.Show("Usuário ou Senha Inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

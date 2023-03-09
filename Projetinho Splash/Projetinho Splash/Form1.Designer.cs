@@ -61,9 +61,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Projetinho_Splash.Properties.Resources.carro;
-            this.pictureBox2.Location = new System.Drawing.Point(235, 358);
+            this.pictureBox2.Location = new System.Drawing.Point(228, 347);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(104, 83);
+            this.pictureBox2.Size = new System.Drawing.Size(114, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
