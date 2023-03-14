@@ -1824,6 +1824,12 @@ namespace Projetinho_Splash {
             
             private global::System.Data.DataColumn columnpess_uf;
             
+            private global::System.Data.DataColumn columnpess_login;
+            
+            private global::System.Data.DataColumn columnpess_senha;
+            
+            private global::System.Data.DataColumn columnpess_cargo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public pessoaDataTable() {
@@ -1939,6 +1945,30 @@ namespace Projetinho_Splash {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn pess_loginColumn {
+                get {
+                    return this.columnpess_login;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn pess_senhaColumn {
+                get {
+                    return this.columnpess_senha;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn pess_cargoColumn {
+                get {
+                    return this.columnpess_cargo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1974,7 +2004,7 @@ namespace Projetinho_Splash {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public pessoaRow AddpessoaRow(string pess_nm, string pess_nm_fantasia, string pess_endereco, string pess_numero, string pess_compl, string pess_bairro, string pess_cep, string pess_cidade, string pess_uf) {
+            public pessoaRow AddpessoaRow(string pess_nm, string pess_nm_fantasia, string pess_endereco, string pess_numero, string pess_compl, string pess_bairro, string pess_cep, string pess_cidade, string pess_uf, string pess_login, string pess_senha, string pess_cargo) {
                 pessoaRow rowpessoaRow = ((pessoaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1986,7 +2016,10 @@ namespace Projetinho_Splash {
                         pess_bairro,
                         pess_cep,
                         pess_cidade,
-                        pess_uf};
+                        pess_uf,
+                        pess_login,
+                        pess_senha,
+                        pess_cargo};
                 rowpessoaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpessoaRow);
                 return rowpessoaRow;
@@ -2026,6 +2059,9 @@ namespace Projetinho_Splash {
                 this.columnpess_cep = base.Columns["pess_cep"];
                 this.columnpess_cidade = base.Columns["pess_cidade"];
                 this.columnpess_uf = base.Columns["pess_uf"];
+                this.columnpess_login = base.Columns["pess_login"];
+                this.columnpess_senha = base.Columns["pess_senha"];
+                this.columnpess_cargo = base.Columns["pess_cargo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2051,6 +2087,12 @@ namespace Projetinho_Splash {
                 base.Columns.Add(this.columnpess_cidade);
                 this.columnpess_uf = new global::System.Data.DataColumn("pess_uf", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpess_uf);
+                this.columnpess_login = new global::System.Data.DataColumn("pess_login", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpess_login);
+                this.columnpess_senha = new global::System.Data.DataColumn("pess_senha", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpess_senha);
+                this.columnpess_cargo = new global::System.Data.DataColumn("pess_cargo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpess_cargo);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnpess_CD}, true));
                 this.columnpess_CD.AutoIncrement = true;
@@ -2077,6 +2119,12 @@ namespace Projetinho_Splash {
                 this.columnpess_cidade.MaxLength = 40;
                 this.columnpess_uf.AllowDBNull = false;
                 this.columnpess_uf.MaxLength = 40;
+                this.columnpess_login.AllowDBNull = false;
+                this.columnpess_login.MaxLength = 5;
+                this.columnpess_senha.AllowDBNull = false;
+                this.columnpess_senha.MaxLength = 8;
+                this.columnpess_cargo.AllowDBNull = false;
+                this.columnpess_cargo.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2817,6 +2865,39 @@ namespace Projetinho_Splash {
                 }
                 set {
                     this[this.tablepessoa.pess_ufColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string pess_login {
+                get {
+                    return ((string)(this[this.tablepessoa.pess_loginColumn]));
+                }
+                set {
+                    this[this.tablepessoa.pess_loginColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string pess_senha {
+                get {
+                    return ((string)(this[this.tablepessoa.pess_senhaColumn]));
+                }
+                set {
+                    this[this.tablepessoa.pess_senhaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string pess_cargo {
+                get {
+                    return ((string)(this[this.tablepessoa.pess_cargoColumn]));
+                }
+                set {
+                    this[this.tablepessoa.pess_cargoColumn] = value;
                 }
             }
         }
@@ -4989,10 +5070,13 @@ SELECT par_CD, par_tipo_pessoa, par_desenpenho FROM cola.parceiro WHERE (par_CD 
             tableMapping.ColumnMappings.Add("pess_cep", "pess_cep");
             tableMapping.ColumnMappings.Add("pess_cidade", "pess_cidade");
             tableMapping.ColumnMappings.Add("pess_uf", "pess_uf");
+            tableMapping.ColumnMappings.Add("pess_login", "pess_login");
+            tableMapping.ColumnMappings.Add("pess_senha", "pess_senha");
+            tableMapping.ColumnMappings.Add("pess_cargo", "pess_cargo");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [cola].[pessoa] WHERE (([pess_CD] = @Original_pess_CD) AND ([pess_nm] = @Original_pess_nm) AND ([pess_nm_fantasia] = @Original_pess_nm_fantasia) AND ([pess_endereco] = @Original_pess_endereco) AND ([pess_numero] = @Original_pess_numero) AND ([pess_compl] = @Original_pess_compl) AND ([pess_bairro] = @Original_pess_bairro) AND ([pess_cep] = @Original_pess_cep) AND ([pess_cidade] = @Original_pess_cidade) AND ([pess_uf] = @Original_pess_uf))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [cola].[pessoa] WHERE (([pess_CD] = @Original_pess_CD) AND ([pess_nm] = @Original_pess_nm) AND ([pess_nm_fantasia] = @Original_pess_nm_fantasia) AND ([pess_endereco] = @Original_pess_endereco) AND ([pess_numero] = @Original_pess_numero) AND ([pess_compl] = @Original_pess_compl) AND ([pess_bairro] = @Original_pess_bairro) AND ([pess_cep] = @Original_pess_cep) AND ([pess_cidade] = @Original_pess_cidade) AND ([pess_uf] = @Original_pess_uf) AND ([pess_login] = @Original_pess_login) AND ([pess_senha] = @Original_pess_senha) AND ([pess_cargo] = @Original_pess_cargo))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_nm", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -5004,10 +5088,13 @@ SELECT par_CD, par_tipo_pessoa, par_desenpenho FROM cola.parceiro WHERE (par_CD 
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_cep", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cep", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_cidade", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cidade", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_uf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_uf", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_senha", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_cargo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cargo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [cola].[pessoa] ([pess_nm], [pess_nm_fantasia], [pess_endereco], [pess_numero], [pess_compl], [pess_bairro], [pess_cep], [pess_cidade], [pess_uf]) VALUES (@pess_nm, @pess_nm_fantasia, @pess_endereco, @pess_numero, @pess_compl, @pess_bairro, @pess_cep, @pess_cidade, @pess_uf);
-SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl, pess_bairro, pess_cep, pess_cidade, pess_uf FROM cola.pessoa WHERE (pess_CD = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [cola].[pessoa] ([pess_nm], [pess_nm_fantasia], [pess_endereco], [pess_numero], [pess_compl], [pess_bairro], [pess_cep], [pess_cidade], [pess_uf], [pess_login], [pess_senha], [pess_cargo]) VALUES (@pess_nm, @pess_nm_fantasia, @pess_endereco, @pess_numero, @pess_compl, @pess_bairro, @pess_cep, @pess_cidade, @pess_uf, @pess_login, @pess_senha, @pess_cargo);
+SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl, pess_bairro, pess_cep, pess_cidade, pess_uf, pess_login, pess_senha, pess_cargo FROM cola.pessoa WHERE (pess_CD = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_nm", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_nm_fantasia", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm_fantasia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5018,10 +5105,13 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_cep", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cep", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_cidade", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cidade", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_uf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_uf", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_senha", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_senha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_cargo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cargo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [cola].[pessoa] SET [pess_nm] = @pess_nm, [pess_nm_fantasia] = @pess_nm_fantasia, [pess_endereco] = @pess_endereco, [pess_numero] = @pess_numero, [pess_compl] = @pess_compl, [pess_bairro] = @pess_bairro, [pess_cep] = @pess_cep, [pess_cidade] = @pess_cidade, [pess_uf] = @pess_uf WHERE (([pess_CD] = @Original_pess_CD) AND ([pess_nm] = @Original_pess_nm) AND ([pess_nm_fantasia] = @Original_pess_nm_fantasia) AND ([pess_endereco] = @Original_pess_endereco) AND ([pess_numero] = @Original_pess_numero) AND ([pess_compl] = @Original_pess_compl) AND ([pess_bairro] = @Original_pess_bairro) AND ([pess_cep] = @Original_pess_cep) AND ([pess_cidade] = @Original_pess_cidade) AND ([pess_uf] = @Original_pess_uf));
-SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl, pess_bairro, pess_cep, pess_cidade, pess_uf FROM cola.pessoa WHERE (pess_CD = @pess_CD)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [cola].[pessoa] SET [pess_nm] = @pess_nm, [pess_nm_fantasia] = @pess_nm_fantasia, [pess_endereco] = @pess_endereco, [pess_numero] = @pess_numero, [pess_compl] = @pess_compl, [pess_bairro] = @pess_bairro, [pess_cep] = @pess_cep, [pess_cidade] = @pess_cidade, [pess_uf] = @pess_uf, [pess_login] = @pess_login, [pess_senha] = @pess_senha, [pess_cargo] = @pess_cargo WHERE (([pess_CD] = @Original_pess_CD) AND ([pess_nm] = @Original_pess_nm) AND ([pess_nm_fantasia] = @Original_pess_nm_fantasia) AND ([pess_endereco] = @Original_pess_endereco) AND ([pess_numero] = @Original_pess_numero) AND ([pess_compl] = @Original_pess_compl) AND ([pess_bairro] = @Original_pess_bairro) AND ([pess_cep] = @Original_pess_cep) AND ([pess_cidade] = @Original_pess_cidade) AND ([pess_uf] = @Original_pess_uf) AND ([pess_login] = @Original_pess_login) AND ([pess_senha] = @Original_pess_senha) AND ([pess_cargo] = @Original_pess_cargo));
+SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl, pess_bairro, pess_cep, pess_cidade, pess_uf, pess_login, pess_senha, pess_cargo FROM cola.pessoa WHERE (pess_CD = @pess_CD)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_nm", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_nm_fantasia", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm_fantasia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5032,6 +5122,9 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_cep", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cep", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_cidade", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cidade", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_uf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_uf", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_senha", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_senha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_cargo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cargo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_nm", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_nm_fantasia", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_nm_fantasia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -5042,6 +5135,9 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_cep", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cep", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_cidade", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cidade", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_uf", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_uf", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_login", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_senha", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_senha", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pess_cargo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pess_cargo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pess_CD", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "pess_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -5059,7 +5155,8 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl" +
-                ", pess_bairro, pess_cep, pess_cidade, pess_uf FROM cola.pessoa";
+                ", pess_bairro, pess_cep, pess_cidade, pess_uf, pess_login, pess_senha, pess_carg" +
+                "o FROM cola.pessoa";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5120,7 +5217,7 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_pess_CD, string Original_pess_nm, string Original_pess_nm_fantasia, string Original_pess_endereco, string Original_pess_numero, string Original_pess_compl, string Original_pess_bairro, string Original_pess_cep, string Original_pess_cidade, string Original_pess_uf) {
+        public virtual int Delete(int Original_pess_CD, string Original_pess_nm, string Original_pess_nm_fantasia, string Original_pess_endereco, string Original_pess_numero, string Original_pess_compl, string Original_pess_bairro, string Original_pess_cep, string Original_pess_cidade, string Original_pess_uf, string Original_pess_login, string Original_pess_senha, string Original_pess_cargo) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_pess_CD));
             if ((Original_pess_nm == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_nm");
@@ -5176,6 +5273,24 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_pess_uf));
             }
+            if ((Original_pess_login == null)) {
+                throw new global::System.ArgumentNullException("Original_pess_login");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_pess_login));
+            }
+            if ((Original_pess_senha == null)) {
+                throw new global::System.ArgumentNullException("Original_pess_senha");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_pess_senha));
+            }
+            if ((Original_pess_cargo == null)) {
+                throw new global::System.ArgumentNullException("Original_pess_cargo");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_pess_cargo));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5196,7 +5311,7 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string pess_nm, string pess_nm_fantasia, string pess_endereco, string pess_numero, string pess_compl, string pess_bairro, string pess_cep, string pess_cidade, string pess_uf) {
+        public virtual int Insert(string pess_nm, string pess_nm_fantasia, string pess_endereco, string pess_numero, string pess_compl, string pess_bairro, string pess_cep, string pess_cidade, string pess_uf, string pess_login, string pess_senha, string pess_cargo) {
             if ((pess_nm == null)) {
                 throw new global::System.ArgumentNullException("pess_nm");
             }
@@ -5251,6 +5366,24 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = ((string)(pess_uf));
             }
+            if ((pess_login == null)) {
+                throw new global::System.ArgumentNullException("pess_login");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(pess_login));
+            }
+            if ((pess_senha == null)) {
+                throw new global::System.ArgumentNullException("pess_senha");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(pess_senha));
+            }
+            if ((pess_cargo == null)) {
+                throw new global::System.ArgumentNullException("pess_cargo");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(pess_cargo));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5281,6 +5414,9 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
                     string pess_cep, 
                     string pess_cidade, 
                     string pess_uf, 
+                    string pess_login, 
+                    string pess_senha, 
+                    string pess_cargo, 
                     int Original_pess_CD, 
                     string Original_pess_nm, 
                     string Original_pess_nm_fantasia, 
@@ -5291,6 +5427,9 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
                     string Original_pess_cep, 
                     string Original_pess_cidade, 
                     string Original_pess_uf, 
+                    string Original_pess_login, 
+                    string Original_pess_senha, 
+                    string Original_pess_cargo, 
                     int pess_CD) {
             if ((pess_nm == null)) {
                 throw new global::System.ArgumentNullException("pess_nm");
@@ -5346,62 +5485,98 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(pess_uf));
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_pess_CD));
+            if ((pess_login == null)) {
+                throw new global::System.ArgumentNullException("pess_login");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(pess_login));
+            }
+            if ((pess_senha == null)) {
+                throw new global::System.ArgumentNullException("pess_senha");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(pess_senha));
+            }
+            if ((pess_cargo == null)) {
+                throw new global::System.ArgumentNullException("pess_cargo");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(pess_cargo));
+            }
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_pess_CD));
             if ((Original_pess_nm == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_nm");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_pess_nm));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_pess_nm));
             }
             if ((Original_pess_nm_fantasia == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_nm_fantasia");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_pess_nm_fantasia));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_pess_nm_fantasia));
             }
             if ((Original_pess_endereco == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_endereco");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_pess_endereco));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_pess_endereco));
             }
             if ((Original_pess_numero == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_numero");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_pess_numero));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_pess_numero));
             }
             if ((Original_pess_compl == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_compl");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_pess_compl));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_pess_compl));
             }
             if ((Original_pess_bairro == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_bairro");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_pess_bairro));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_pess_bairro));
             }
             if ((Original_pess_cep == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_cep");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_pess_cep));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_pess_cep));
             }
             if ((Original_pess_cidade == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_cidade");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_pess_cidade));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_pess_cidade));
             }
             if ((Original_pess_uf == null)) {
                 throw new global::System.ArgumentNullException("Original_pess_uf");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_pess_uf));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_pess_uf));
             }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(pess_CD));
+            if ((Original_pess_login == null)) {
+                throw new global::System.ArgumentNullException("Original_pess_login");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_pess_login));
+            }
+            if ((Original_pess_senha == null)) {
+                throw new global::System.ArgumentNullException("Original_pess_senha");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_pess_senha));
+            }
+            if ((Original_pess_cargo == null)) {
+                throw new global::System.ArgumentNullException("Original_pess_cargo");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_pess_cargo));
+            }
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(pess_CD));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5432,6 +5607,9 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
                     string pess_cep, 
                     string pess_cidade, 
                     string pess_uf, 
+                    string pess_login, 
+                    string pess_senha, 
+                    string pess_cargo, 
                     int Original_pess_CD, 
                     string Original_pess_nm, 
                     string Original_pess_nm_fantasia, 
@@ -5441,8 +5619,11 @@ SELECT pess_CD, pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_comp
                     string Original_pess_bairro, 
                     string Original_pess_cep, 
                     string Original_pess_cidade, 
-                    string Original_pess_uf) {
-            return this.Update(pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl, pess_bairro, pess_cep, pess_cidade, pess_uf, Original_pess_CD, Original_pess_nm, Original_pess_nm_fantasia, Original_pess_endereco, Original_pess_numero, Original_pess_compl, Original_pess_bairro, Original_pess_cep, Original_pess_cidade, Original_pess_uf, Original_pess_CD);
+                    string Original_pess_uf, 
+                    string Original_pess_login, 
+                    string Original_pess_senha, 
+                    string Original_pess_cargo) {
+            return this.Update(pess_nm, pess_nm_fantasia, pess_endereco, pess_numero, pess_compl, pess_bairro, pess_cep, pess_cidade, pess_uf, pess_login, pess_senha, pess_cargo, Original_pess_CD, Original_pess_nm, Original_pess_nm_fantasia, Original_pess_endereco, Original_pess_numero, Original_pess_compl, Original_pess_bairro, Original_pess_cep, Original_pess_cidade, Original_pess_uf, Original_pess_login, Original_pess_senha, Original_pess_cargo, Original_pess_CD);
         }
     }
     

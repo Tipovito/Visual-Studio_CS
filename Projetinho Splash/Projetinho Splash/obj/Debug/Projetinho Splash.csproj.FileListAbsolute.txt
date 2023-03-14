@@ -16,3 +16,4 @@ C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\D
 C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho Splash.csproj.CopyComplete
 C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmCadPessoa.resources
 C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmMenu.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmCadColaborador.resources

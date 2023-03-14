@@ -48,17 +48,47 @@ namespace Projetinho_Splash
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "victor") && (textBox2.Text == "123") && (comboBox1.Text == "Pintor"))
+            if (textBox1.Text.Length == 0 && textBox2.Text.Length == 0)
             {
-                this.Visible = false;
-                frmMenu frmLogin = new frmMenu();
-                frmLogin.ShowDialog();
+                MessageBox.Show("Entre com os dados");
             }
             else
-                MessageBox.Show("Usuário ou Senha Inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            {
+                pessoaBindingSource.Filter = "pess_login='" + textBox1.Text + "'";
+
+                if (textBox1.Text.ToUpper() != textBox3.Text.ToUpper())
+                {
+                    MessageBox.Show("USUARIO ERRADO");
+                    return;
+                }
+                if (textBox2.Text.ToUpper() != textBox4.Text.ToUpper())
+                {
+                    MessageBox.Show("SENHA ERRADA");
+                    return;
+                }
+                if (comboBox1.Text.ToUpper() != comboBox2.Text.ToUpper())
+                {
+                    MessageBox.Show("Erro burro!");
+                    return;
+                }
+                this.Visible = false;
+                frmMenu newmenu = new frmMenu();
+                newmenu.ShowDialog();
+            }
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
+            this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
+            this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+            textBox1.Text = "";
+            textBox2.Text = "";
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

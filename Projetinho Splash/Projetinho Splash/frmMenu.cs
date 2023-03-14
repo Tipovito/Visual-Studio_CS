@@ -30,5 +30,12 @@ namespace Projetinho_Splash
             this.Hide();
             frmMenu.ShowDialog();
         }
+
+        private void cadColaboradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadColaborador frmMenu = new frmCadColaborador();
+            this.Hide();
+            frmMenu.ShowDialog();
+        }
     }
 }

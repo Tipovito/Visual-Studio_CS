@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colabDataSet = new Projetinho_Splash.colabDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -40,23 +38,15 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.pessoaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.pessoaTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
+            this.colabDataSet = new Projetinho_Splash.colabDataSet();
+            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pessoaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.pessoaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pessoaBindingSource
-            // 
-            this.pessoaBindingSource.DataMember = "pessoa";
-            this.pessoaBindingSource.DataSource = this.colabDataSet;
-            // 
-            // colabDataSet
-            // 
-            this.colabDataSet.DataSetName = "colabDataSet";
-            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -98,10 +88,11 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 4;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
-            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaBindingSource, "pess_bairro", true));
+            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaBindingSource, "pess_compl", true));
             this.textBox7.Location = new System.Drawing.Point(324, 115);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
@@ -109,7 +100,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaBindingSource, "pess_cep", true));
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pessoaBindingSource, "pess_bairro", true));
             this.textBox8.Location = new System.Drawing.Point(324, 159);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
@@ -130,10 +121,6 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 8;
-            // 
-            // pessoaTableAdapter
-            // 
-            this.pessoaTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -165,6 +152,20 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // colabDataSet
+            // 
+            this.colabDataSet.DataSetName = "colabDataSet";
+            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pessoaBindingSource
+            // 
+            this.pessoaBindingSource.DataMember = "pessoa";
+            this.pessoaBindingSource.DataSource = this.colabDataSet;
+            // 
+            // pessoaTableAdapter
+            // 
+            this.pessoaTableAdapter.ClearBeforeFill = true;
+            // 
             // frmCadPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,10 +184,11 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Name = "frmCadPessoa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadPessoa";
             this.Load += new System.EventHandler(this.frmCadPessoa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,11 +204,11 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private colabDataSet colabDataSet;
-        private System.Windows.Forms.BindingSource pessoaBindingSource;
-        private colabDataSetTableAdapters.pessoaTableAdapter pessoaTableAdapter;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private colabDataSet colabDataSet;
+        private System.Windows.Forms.BindingSource pessoaBindingSource;
+        private colabDataSetTableAdapters.pessoaTableAdapter pessoaTableAdapter;
     }
 }

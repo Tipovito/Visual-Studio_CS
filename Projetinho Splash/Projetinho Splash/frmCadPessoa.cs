@@ -21,6 +21,10 @@ namespace Projetinho_Splash
         {
             // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
             this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
+            this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
+            this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
             pessoaBindingSource.AddNew();
 
             foreach(Control controle in this.Controls)
@@ -92,6 +96,11 @@ namespace Projetinho_Splash
             //aparece a mensagem quando der certo
             MessageBox.Show("Pèssoa cadastrada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
