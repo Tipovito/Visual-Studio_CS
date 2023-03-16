@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Projetinho_Splash
 {
-    public partial class frmCadColaborador : Form
+    public partial class frmCadParceiro : Form
     {
         private void ClearAllBoxes()
         {
@@ -31,9 +31,24 @@ namespace Projetinho_Splash
             func(Controls);
         }
 
-        public frmCadColaborador()
+        public frmCadParceiro()
         {
             InitializeComponent();
+        }
+
+        private void frmCadParceiro_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.parceiro'. Você pode movê-la ou removê-la conforme necessário.
+            this.parceiroTableAdapter.Fill(this.colabDataSet.parceiro);
+            parceiroBindingSource.AddNew();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmMenu frmCadParceiro = new frmMenu();
+            this.Hide();
+            frmCadParceiro.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,35 +56,16 @@ namespace Projetinho_Splash
             ClearAllBoxes();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frmMenu frmCadColaborador = new frmMenu();
-            this.Hide();
-            frmCadColaborador.ShowDialog();
-        }
-
-        private void frmCadColaborador_Load(object sender, EventArgs e)
-        {
-            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.colaborador'. Você pode movê-la ou removê-la conforme necessário.
-            this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
-            colaboradorBindingSource.AddNew();
-        }
-
-        private void colaboradorBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.Validate();
-            colaboradorBindingSource.EndEdit();
-            colaboradorTableAdapter.Update(colabDataSet.colaborador);
-            this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
-            colaboradorBindingSource.MoveLast();
+            parceiroBindingSource.EndEdit();
+            parceiroTableAdapter.Update(colabDataSet.parceiro);
+            this.parceiroTableAdapter.Fill(this.colabDataSet.parceiro);
+            parceiroBindingSource.MoveLast();
 
             //chamar um novo registro
-            colaboradorBindingSource.AddNew();
+            parceiroBindingSource.AddNew();
 
             //Para o usuário continuar preenchendo
             textBox2.Focus();

@@ -69,6 +69,24 @@
     <Compile Include="frmCadColaborador.Designer.cs">
       <DependentUpon>frmCadColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadFisica.Designer.cs">
+      <DependentUpon>frmCadFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadJuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadJuridica.Designer.cs">
+      <DependentUpon>frmCadJuridica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadParceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadParceiro.Designer.cs">
+      <DependentUpon>frmCadParceiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadPessoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +105,36 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPesquisaColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisaColaborador.Designer.cs">
+      <DependentUpon>frmPesquisaColaborador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisaFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisaFisica.Designer.cs">
+      <DependentUpon>frmPesquisaFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisaJuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisaJuridica.Designer.cs">
+      <DependentUpon>frmPesquisaJuridica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisaParceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisaParceiro.Designer.cs">
+      <DependentUpon>frmPesquisaParceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisaPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisaPessoa.Designer.cs">
+      <DependentUpon>frmPesquisaPessoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -94,6 +142,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadColaborador.resx">
       <DependentUpon>frmCadColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadFisica.resx">
+      <DependentUpon>frmCadFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadJuridica.resx">
+      <DependentUpon>frmCadJuridica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadParceiro.resx">
+      <DependentUpon>frmCadParceiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadPessoa.resx">
       <DependentUpon>frmCadPessoa.cs</DependentUpon>
@@ -103,6 +160,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisaColaborador.resx">
+      <DependentUpon>frmPesquisaColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisaFisica.resx">
+      <DependentUpon>frmPesquisaFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisaJuridica.resx">
+      <DependentUpon>frmPesquisaJuridica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisaParceiro.resx">
+      <DependentUpon>frmPesquisaParceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisaPessoa.resx">
+      <DependentUpon>frmPesquisaPessoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

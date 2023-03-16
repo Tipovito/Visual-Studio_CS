@@ -27,14 +27,14 @@ namespace Projetinho_Splash
             this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
             pessoaBindingSource.AddNew();
 
-            foreach(Control controle in this.Controls)
-    {
-        if(controle is TextBox)
-        {
-            TextBox textBox = (TextBox)controle;
-            textBox.Text = string.Empty;
-        }
-    }
+            foreach (Control controle in this.Controls)
+            {
+                if (controle is TextBox)
+                {
+                    TextBox textBox = (TextBox)controle;
+                    textBox.Text = string.Empty;
+                }
+            }
 
         }
 
@@ -101,6 +101,13 @@ namespace Projetinho_Splash
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmPesquisaPessoa frmCadPessoa = new frmPesquisaPessoa();
+            this.Hide();
+            frmCadPessoa.ShowDialog();
         }
     }
 }

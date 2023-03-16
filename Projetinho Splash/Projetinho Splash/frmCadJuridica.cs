@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Projetinho_Splash
 {
-    public partial class frmCadColaborador : Form
+    public partial class frmCadJuridica : Form
     {
         private void ClearAllBoxes()
         {
@@ -31,9 +31,16 @@ namespace Projetinho_Splash
             func(Controls);
         }
 
-        public frmCadColaborador()
+        public frmCadJuridica()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmMenu frmCadJuridica = new frmMenu();
+            this.Hide();
+            frmCadJuridica.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,41 +48,39 @@ namespace Projetinho_Splash
             ClearAllBoxes();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void frmCadJuridica_Load(object sender, EventArgs e)
         {
-            frmMenu frmCadColaborador = new frmMenu();
-            this.Hide();
-            frmCadColaborador.ShowDialog();
-        }
-
-        private void frmCadColaborador_Load(object sender, EventArgs e)
-        {
-            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.colaborador'. Você pode movê-la ou removê-la conforme necessário.
-            this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
-            colaboradorBindingSource.AddNew();
-        }
-
-        private void colaboradorBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.juridica'. Você pode movê-la ou removê-la conforme necessário.
+            this.juridicaTableAdapter.Fill(this.colabDataSet.juridica);
+            juridicaBindingSource.AddNew();
+            foreach (Control controle in this.Controls)
+            {
+                if (controle is TextBox)
+                {
+                    TextBox textBox = (TextBox)controle;
+                    textBox.Text = string.Empty;
+                }
+            }
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Validate();
-            colaboradorBindingSource.EndEdit();
-            colaboradorTableAdapter.Update(colabDataSet.colaborador);
-            this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
-            colaboradorBindingSource.MoveLast();
+            juridicaBindingSource.EndEdit();
+            juridicaTableAdapter.Update(colabDataSet.juridica);
+            this.juridicaTableAdapter.Fill(this.colabDataSet.juridica);
+            juridicaBindingSource.MoveLast();
 
             //chamar um novo registro
-            colaboradorBindingSource.AddNew();
+            juridicaBindingSource.AddNew();
 
             //Para o usuário continuar preenchendo
             textBox2.Focus();
 
             //aparece a mensagem quando der certo
             MessageBox.Show("Pèssoa cadastrada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
         }
     }
 }
