@@ -36,5 +36,37 @@ namespace Projetinho_Splash
             this.Hide();
             frmPesquisaColaborador.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            colaboradorBindingSource.Filter = string.Format("col_ctps={0}",
+            textBox2.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.Visible = false;
+            frmAlteraColaborador frmMenu = new frmAlteraColaborador();
+            frmMenu.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                colaboradorBindingSource.RemoveCurrent();
+                colaboradorTableAdapter.Update(colabDataSet.colaborador); //salvar
+                this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
+        }
     }
 }

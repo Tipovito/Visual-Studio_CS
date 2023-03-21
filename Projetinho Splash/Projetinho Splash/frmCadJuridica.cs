@@ -82,5 +82,12 @@ namespace Projetinho_Splash
             MessageBox.Show("Pèssoa cadastrada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmPesquisaJuridica frmMenu = new frmPesquisaJuridica();
+            this.Hide();
+            frmMenu.ShowDialog();
+        }
     }
 }

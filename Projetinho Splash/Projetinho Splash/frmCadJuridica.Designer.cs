@@ -30,20 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.juridicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colabDataSet = new Projetinho_Splash.colabDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.colabDataSet = new Projetinho_Splash.colabDataSet();
-            this.juridicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.juridicaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.juridicaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -55,15 +54,6 @@
             this.button6.Text = "Apagar";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(218, 357);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 33);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Editar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(96, 357);
@@ -72,6 +62,7 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "Pesquisar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -111,6 +102,16 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 17;
             // 
+            // juridicaBindingSource
+            // 
+            this.juridicaBindingSource.DataMember = "juridica";
+            this.juridicaBindingSource.DataSource = this.colabDataSet;
+            // 
+            // colabDataSet
+            // 
+            this.colabDataSet.DataSetName = "colabDataSet";
+            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.juridicaBindingSource, "jur_CNPJ", true));
@@ -135,16 +136,6 @@
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 20;
             // 
-            // colabDataSet
-            // 
-            this.colabDataSet.DataSetName = "colabDataSet";
-            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // juridicaBindingSource
-            // 
-            this.juridicaBindingSource.DataMember = "juridica";
-            this.juridicaBindingSource.DataSource = this.colabDataSet;
-            // 
             // juridicaTableAdapter
             // 
             this.juridicaTableAdapter.ClearBeforeFill = true;
@@ -159,7 +150,6 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -170,8 +160,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadJuridica";
             this.Load += new System.EventHandler(this.frmCadJuridica_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +170,6 @@
         #endregion
 
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;

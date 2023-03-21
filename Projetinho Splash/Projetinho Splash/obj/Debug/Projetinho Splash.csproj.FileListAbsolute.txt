@@ -25,3 +25,8 @@ C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\D
 C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmPesquisaColaborador.resources
 C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmPesquisaParceiro.resources
 C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmPesquisaFisica.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmAlteraPessoa.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmAlteraFisica.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmAlteraJuridica.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmAlteraColaborador.resources
+C:\Users\victor.hsantos41\source\repos\Projetinho Splash\Projetinho Splash\obj\Debug\Projetinho_Splash.frmAlteraParceiro.resources

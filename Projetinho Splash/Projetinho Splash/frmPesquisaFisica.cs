@@ -49,5 +49,18 @@ namespace Projetinho_Splash
                 fisicaBindingSource.Filter = string.Format("fis_CPF like'%{0}%'", textBox2.Text);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.Visible = false;
+            frmAlteraFisica frmMenu = new frmAlteraFisica();
+            frmMenu.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

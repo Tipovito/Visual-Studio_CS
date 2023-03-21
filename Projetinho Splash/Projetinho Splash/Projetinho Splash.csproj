@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="colabDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -62,6 +63,36 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlteraColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraColaborador.Designer.cs">
+      <DependentUpon>frmAlteraColaborador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlteraFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraFisica.Designer.cs">
+      <DependentUpon>frmAlteraFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlteraJuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraJuridica.Designer.cs">
+      <DependentUpon>frmAlteraJuridica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlteraParceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraParceiro.Designer.cs">
+      <DependentUpon>frmAlteraParceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlteraPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlteraPessoa.Designer.cs">
+      <DependentUpon>frmAlteraPessoa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCadColaborador.cs">
       <SubType>Form</SubType>
@@ -139,6 +170,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraColaborador.resx">
+      <DependentUpon>frmAlteraColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraFisica.resx">
+      <DependentUpon>frmAlteraFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraJuridica.resx">
+      <DependentUpon>frmAlteraJuridica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraParceiro.resx">
+      <DependentUpon>frmAlteraParceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlteraPessoa.resx">
+      <DependentUpon>frmAlteraPessoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadColaborador.resx">
       <DependentUpon>frmCadColaborador.cs</DependentUpon>

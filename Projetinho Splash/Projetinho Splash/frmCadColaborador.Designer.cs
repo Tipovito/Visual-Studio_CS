@@ -51,7 +51,6 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.colaboradorTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.colaboradorTableAdapter();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
@@ -230,15 +229,6 @@
             this.button6.Text = "Apagar";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(214, 355);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 33);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Editar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(95, 355);
@@ -247,6 +237,7 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "Pesquisar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmCadColaborador
             // 
@@ -254,7 +245,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 484);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);
@@ -311,7 +301,6 @@
         private System.Windows.Forms.BindingSource colaboradorBindingSource;
         private colabDataSetTableAdapters.colaboradorTableAdapter colaboradorTableAdapter;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
     }
 }

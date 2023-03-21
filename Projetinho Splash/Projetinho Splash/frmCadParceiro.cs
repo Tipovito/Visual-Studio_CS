@@ -73,5 +73,12 @@ namespace Projetinho_Splash
             //aparece a mensagem quando der certo
             MessageBox.Show("Pèssoa cadastrada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmPesquisaParceiro frmMenu = new frmPesquisaParceiro();
+            this.Hide();
+            frmMenu.ShowDialog();
+        }
     }
 }

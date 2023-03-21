@@ -45,7 +45,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pessoaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.pessoaTableAdapter();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -184,15 +183,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(214, 399);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 33);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Editar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(338, 399);
@@ -249,7 +239,6 @@
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -295,7 +284,6 @@
         private System.Windows.Forms.BindingSource pessoaBindingSource;
         private colabDataSetTableAdapters.pessoaTableAdapter pessoaTableAdapter;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;

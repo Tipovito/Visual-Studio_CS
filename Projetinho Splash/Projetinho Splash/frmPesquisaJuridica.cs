@@ -21,6 +21,7 @@ namespace Projetinho_Splash
         {
             // TODO: esta linha de código carrega dados na tabela 'colabDataSet.juridica'. Você pode movê-la ou removê-la conforme necessário.
             this.juridicaTableAdapter.Fill(this.colabDataSet.juridica);
+            // TODO: esta linha de código carrega dados na tabela 'colabDataSet.juridica'. Você pode movê-la ou removê-la conforme necessário.
 
         }
 
@@ -35,6 +36,37 @@ namespace Projetinho_Splash
             frmMenu frmPesquisaJuridica = new frmMenu();
             this.Hide();
             frmPesquisaJuridica.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            juridicaBindingSource.Filter = string.Format("jur_CNPJ={0}",
+            textBox2.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmAlteraJuridica frmMenu = new frmAlteraJuridica();
+            this.Hide();
+            frmMenu.ShowDialog();
+        }
+
+        private void Deletar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                juridicaBindingSource.RemoveCurrent();
+                juridicaTableAdapter.Update(colabDataSet.juridica); //salvar
+                this.juridicaTableAdapter.Fill(this.colabDataSet.juridica);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
         }
     }
 }
