@@ -62,5 +62,23 @@ namespace Projetinho_Splash
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                fisicaBindingSource.RemoveCurrent();
+                fisicaTableAdapter.Update(colabDataSet.fisica); //salvar
+                this.fisicaTableAdapter.Fill(this.colabDataSet.fisica);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
+        }
     }
 }

@@ -46,6 +46,7 @@ namespace Projetinho_Splash
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             frmAlteraJuridica frmMenu = new frmAlteraJuridica();
             this.Hide();
             frmMenu.ShowDialog();

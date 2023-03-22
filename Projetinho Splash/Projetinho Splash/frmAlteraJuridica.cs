@@ -41,6 +41,10 @@ namespace Projetinho_Splash
         private void frmAlteraJuridica_Load(object sender, EventArgs e)
         {
             this.juridicaTableAdapter.Fill(this.colabDataSet.juridica);
+            if (Class1.codigo == "")
+            { juridicaBindingSource.AddNew(); }
+            else
+            { juridicaBindingSource.Filter = string.Format("jur_CD={0}", Class1.codigo); }
         }
 
         private void button2_Click(object sender, EventArgs e)

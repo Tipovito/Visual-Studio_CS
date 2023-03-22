@@ -45,7 +45,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pessoaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.pessoaTableAdapter();
             this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -151,10 +150,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(338, 337);
+            this.button2.Location = new System.Drawing.Point(214, 412);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 14;
+            this.button2.TabIndex = 15;
             this.button2.Text = "Voltar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -175,22 +174,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(92, 399);
+            this.button4.Location = new System.Drawing.Point(336, 337);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
-            this.button4.TabIndex = 15;
+            this.button4.TabIndex = 14;
             this.button4.Text = "Pesquisar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(338, 399);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 33);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Apagar";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -238,7 +228,6 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -284,7 +273,6 @@
         private System.Windows.Forms.BindingSource pessoaBindingSource;
         private colabDataSetTableAdapters.pessoaTableAdapter pessoaTableAdapter;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox11;

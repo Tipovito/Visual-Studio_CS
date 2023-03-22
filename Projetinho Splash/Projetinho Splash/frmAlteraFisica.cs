@@ -41,6 +41,18 @@ namespace Projetinho_Splash
         private void frmAlteraFisica_Load(object sender, EventArgs e)
         {
             this.fisicaTableAdapter.Fill(this.colabDataSet.fisica);
+            if (Class1.codigo == "")
+            { fisicaBindingSource.AddNew(); }
+            else
+            { fisicaBindingSource.Filter = string.Format("fis_CD={0}", Class1.codigo); }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmPesquisaFisica frmMenu = new frmPesquisaFisica();
+            this.Hide();
+            frmMenu.ShowDialog();
+
         }
     }
 }

@@ -42,6 +42,10 @@ namespace Projetinho_Splash
         private void frmAlteraPessoa_Load(object sender, EventArgs e)
         {
             this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+            if (Class1.codigo == "")
+            { pessoaBindingSource.AddNew(); }
+            else
+            { pessoaBindingSource.Filter = string.Format("pess_CD={0}", Class1.codigo); }
         }
 
         private void button2_Click(object sender, EventArgs e)

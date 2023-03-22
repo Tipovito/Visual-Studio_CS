@@ -47,7 +47,7 @@
             this.textBox1.Location = new System.Drawing.Point(72, 136);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 25;
+            this.textBox1.TabIndex = 0;
             // 
             // parceiroBindingSource
             // 
@@ -61,22 +61,23 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(162, 286);
+            this.button6.Location = new System.Drawing.Point(174, 286);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 33);
-            this.button6.TabIndex = 24;
+            this.button6.TabIndex = 3;
             this.button6.Text = "Alterar";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(277, 286);
+            this.button2.Location = new System.Drawing.Point(270, 286);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 22;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Voltar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
             // 
@@ -84,7 +85,7 @@
             this.textBox3.Location = new System.Drawing.Point(343, 136);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 27;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -92,7 +93,7 @@
             this.textBox2.Location = new System.Drawing.Point(209, 136);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 26;
+            this.textBox2.TabIndex = 1;
             // 
             // parceiroTableAdapter
             // 

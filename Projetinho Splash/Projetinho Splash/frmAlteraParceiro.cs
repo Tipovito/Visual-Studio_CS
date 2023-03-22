@@ -37,6 +37,17 @@ namespace Projetinho_Splash
         private void frmAlteraParceiro_Load(object sender, EventArgs e)
         {
             this.parceiroTableAdapter.Fill(this.colabDataSet.parceiro);
+            if (Class1.codigo == "")
+            { parceiroBindingSource.AddNew(); }
+            else
+            { parceiroBindingSource.Filter = string.Format("par_CD={0}", Class1.codigo); }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmPesquisaParceiro frmMenu = new frmPesquisaParceiro();
+            this.Hide();
+            frmMenu.ShowDialog();
         }
     }
 }

@@ -48,7 +48,7 @@
             this.textBox1.Location = new System.Drawing.Point(77, 90);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 27;
+            this.textBox1.TabIndex = 0;
             // 
             // juridicaBindingSource
             // 
@@ -65,7 +65,7 @@
             this.button5.Location = new System.Drawing.Point(170, 299);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 33);
-            this.button5.TabIndex = 25;
+            this.button5.TabIndex = 4;
             this.button5.Text = "Alterar";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -75,7 +75,7 @@
             this.button2.Location = new System.Drawing.Point(268, 299);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 23;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Voltar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -86,7 +86,7 @@
             this.textBox4.Location = new System.Drawing.Point(338, 148);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 30;
+            this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -94,7 +94,7 @@
             this.textBox3.Location = new System.Drawing.Point(338, 90);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 29;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -102,7 +102,7 @@
             this.textBox2.Location = new System.Drawing.Point(77, 148);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 28;
+            this.textBox2.TabIndex = 1;
             // 
             // juridicaTableAdapter
             // 

@@ -50,7 +50,6 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.colaboradorTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.colaboradorTableAdapter();
-            this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
@@ -182,10 +181,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(337, 308);
+            this.button2.Location = new System.Drawing.Point(214, 364);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 17;
+            this.button2.TabIndex = 18;
             this.button2.Text = "Voltar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -220,21 +219,12 @@
             // 
             this.colaboradorTableAdapter.ClearBeforeFill = true;
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(337, 355);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 33);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Apagar";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(95, 355);
+            this.button4.Location = new System.Drawing.Point(335, 308);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
-            this.button4.TabIndex = 18;
+            this.button4.TabIndex = 17;
             this.button4.Text = "Pesquisar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -244,7 +234,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 484);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);
@@ -300,7 +289,6 @@
         private colabDataSet colabDataSet;
         private System.Windows.Forms.BindingSource colaboradorBindingSource;
         private colabDataSetTableAdapters.colaboradorTableAdapter colaboradorTableAdapter;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button4;
     }
 }

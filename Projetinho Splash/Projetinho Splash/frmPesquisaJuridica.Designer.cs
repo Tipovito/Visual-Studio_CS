@@ -30,25 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.juridicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colabDataSet = new Projetinho_Splash.colabDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.colabDataSet = new Projetinho_Splash.colabDataSet();
-            this.juridicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.juridicaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.juridicaTableAdapter();
             this.jurCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jurCNPJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jurInsEstDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jurfundDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.juridicaTableAdapter = new Projetinho_Splash.colabDataSetTableAdapters.juridicaTableAdapter();
             this.Deletar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -58,6 +58,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
+            // 
+            // juridicaBindingSource
+            // 
+            this.juridicaBindingSource.DataMember = "juridica";
+            this.juridicaBindingSource.DataSource = this.colabDataSet;
+            // 
+            // colabDataSet
+            // 
+            this.colabDataSet.DataSetName = "colabDataSet";
+            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -101,8 +111,32 @@
             this.dataGridView1.Location = new System.Drawing.Point(36, 199);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(446, 135);
+            this.dataGridView1.Size = new System.Drawing.Size(442, 135);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // jurCDDataGridViewTextBoxColumn
+            // 
+            this.jurCDDataGridViewTextBoxColumn.DataPropertyName = "jur_CD";
+            this.jurCDDataGridViewTextBoxColumn.HeaderText = "jur_CD";
+            this.jurCDDataGridViewTextBoxColumn.Name = "jurCDDataGridViewTextBoxColumn";
+            // 
+            // jurCNPJDataGridViewTextBoxColumn
+            // 
+            this.jurCNPJDataGridViewTextBoxColumn.DataPropertyName = "jur_CNPJ";
+            this.jurCNPJDataGridViewTextBoxColumn.HeaderText = "jur_CNPJ";
+            this.jurCNPJDataGridViewTextBoxColumn.Name = "jurCNPJDataGridViewTextBoxColumn";
+            // 
+            // jurInsEstDataGridViewTextBoxColumn
+            // 
+            this.jurInsEstDataGridViewTextBoxColumn.DataPropertyName = "jur_Ins_Est";
+            this.jurInsEstDataGridViewTextBoxColumn.HeaderText = "jur_Ins_Est";
+            this.jurInsEstDataGridViewTextBoxColumn.Name = "jurInsEstDataGridViewTextBoxColumn";
+            // 
+            // jurfundDataGridViewTextBoxColumn
+            // 
+            this.jurfundDataGridViewTextBoxColumn.DataPropertyName = "jur_fund";
+            this.jurfundDataGridViewTextBoxColumn.HeaderText = "jur_fund";
+            this.jurfundDataGridViewTextBoxColumn.Name = "jurfundDataGridViewTextBoxColumn";
             // 
             // label2
             // 
@@ -141,43 +175,9 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // colabDataSet
-            // 
-            this.colabDataSet.DataSetName = "colabDataSet";
-            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // juridicaBindingSource
-            // 
-            this.juridicaBindingSource.DataMember = "juridica";
-            this.juridicaBindingSource.DataSource = this.colabDataSet;
-            // 
             // juridicaTableAdapter
             // 
             this.juridicaTableAdapter.ClearBeforeFill = true;
-            // 
-            // jurCDDataGridViewTextBoxColumn
-            // 
-            this.jurCDDataGridViewTextBoxColumn.DataPropertyName = "jur_CD";
-            this.jurCDDataGridViewTextBoxColumn.HeaderText = "jur_CD";
-            this.jurCDDataGridViewTextBoxColumn.Name = "jurCDDataGridViewTextBoxColumn";
-            // 
-            // jurCNPJDataGridViewTextBoxColumn
-            // 
-            this.jurCNPJDataGridViewTextBoxColumn.DataPropertyName = "jur_CNPJ";
-            this.jurCNPJDataGridViewTextBoxColumn.HeaderText = "jur_CNPJ";
-            this.jurCNPJDataGridViewTextBoxColumn.Name = "jurCNPJDataGridViewTextBoxColumn";
-            // 
-            // jurInsEstDataGridViewTextBoxColumn
-            // 
-            this.jurInsEstDataGridViewTextBoxColumn.DataPropertyName = "jur_Ins_Est";
-            this.jurInsEstDataGridViewTextBoxColumn.HeaderText = "jur_Ins_Est";
-            this.jurInsEstDataGridViewTextBoxColumn.Name = "jurInsEstDataGridViewTextBoxColumn";
-            // 
-            // jurfundDataGridViewTextBoxColumn
-            // 
-            this.jurfundDataGridViewTextBoxColumn.DataPropertyName = "jur_fund";
-            this.jurfundDataGridViewTextBoxColumn.HeaderText = "jur_fund";
-            this.jurfundDataGridViewTextBoxColumn.Name = "jurfundDataGridViewTextBoxColumn";
             // 
             // Deletar
             // 
@@ -210,9 +210,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPesquisaJuridica";
             this.Load += new System.EventHandler(this.frmPesquisaJuridica_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

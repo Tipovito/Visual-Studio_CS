@@ -41,6 +41,10 @@ namespace Projetinho_Splash
         private void frmAlteraColaborador_Load(object sender, EventArgs e)
         {
             this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
+            if (Class1.codigo == "")
+            { colaboradorBindingSource.AddNew(); }
+            else
+            { colaboradorBindingSource.Filter = string.Format("col_CD={0}", Class1.codigo); }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,7 +54,9 @@ namespace Projetinho_Splash
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            frmPesquisaColaborador frmMenu = new frmPesquisaColaborador();
+            this.Hide();
+            frmMenu.ShowDialog();
         }
     }
 }

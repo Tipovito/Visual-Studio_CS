@@ -49,7 +49,6 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
             this.SuspendLayout();
@@ -96,7 +95,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 346);
+            this.button2.Location = new System.Drawing.Point(314, 346);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
             this.button2.TabIndex = 38;
@@ -208,22 +207,11 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 23;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(218, 346);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Deletar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmAlteraColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 484);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);
@@ -242,6 +230,7 @@
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox1);
             this.Name = "frmAlteraColaborador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAlteraColaborador";
             this.Load += new System.EventHandler(this.frmAlteraColaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
@@ -273,6 +262,5 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
     }
 }
