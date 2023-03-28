@@ -1,0 +1,13 @@
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\bin\Debug\Bliobibliobilio.exe.config
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\bin\Debug\Bliobibliobilio.exe
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\bin\Debug\Bliobibliobilio.pdb
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.csproj.AssemblyReference.cache
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.csproj.SuggestedBindingRedirects.cache
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.Form1.resources
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.frmAcervo.resources
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.frmAutores.resources
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.Properties.Resources.resources
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.csproj.GenerateResource.cache
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.csproj.CoreCompileInputs.cache
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.exe
+C:\Users\victor.hsantos41\source\repos\Bliobibliobilio\Bliobibliobilio\obj\Debug\Bliobibliobilio.pdb
